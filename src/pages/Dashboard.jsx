@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import ShowFile from '../components/ShowFile';
+import ShowFile from '../components/ShowFile';
 
 
 const Dashboard = () => {
@@ -12,9 +12,9 @@ const Dashboard = () => {
 	return (
         <div>
         <div className="pdf-grid">
-            {pdfFiles.map((file, index) => (
-                <div  className="pdf-container">
-                    {/* <ShowFile file={file} scale={0.5} /> */}
+            {pdfFiles && pdfFiles.map((file, index) => (
+                <div key={index} className="pdf-container">
+                    <ShowFile file={file} scale={0.5} />
                 </div>
             ))}
             </div>

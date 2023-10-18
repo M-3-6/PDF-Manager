@@ -7,7 +7,6 @@ import Dashboard from "./pages/Dashboard";
 import Upload from "./components/UploadFile";
 import pdfFiles from "./pdfFiles";
 import Home from "./components/Home";
-import HighlightAndComment from "./components/HighlightAndComment";
 
 // import { AuthContextProvider } from "../context/AuthContext";
 
@@ -17,8 +16,8 @@ function App() {
       {/* <Register /> */}
       {/* <Login /> */}
       {/* <Open file={"some-file-2.pdf"}/>  */}
-      {/* <Home /> */}
-      <Open />
+      <Home />
+      {/* <Open /> */}
       {/* <HighlightAndComment /> */}
     </div>
   );
