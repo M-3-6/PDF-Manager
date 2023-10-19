@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
 const Login = () => {
   const [err, setErr] = useState(false);
-//   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,7 +13,6 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-    //   navigate("/")
     } catch (err) {
       setErr(true);
     }
@@ -27,11 +25,10 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
           <input type="password" placeholder="password" />
-          <button>Sign in</button>
+          <button><Link to="/home" className="nav-link" style={{"color":"white"}}>Sign in</Link></button>
           {err && <span>Something went wrong</span>}
         </form>
-        <p>Do not have an account? Sign Up </p>
-            {/* <Link to="/register">Sign Up</Link></p> */}
+        <p>Do not have an account? <Link to="/register" className="nav-link">Sign Up</Link></p>
       </div>
     </div>
   );

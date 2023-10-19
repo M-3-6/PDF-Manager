@@ -31,11 +31,6 @@ const ShowFile = ({file, scale}) => {
 				</p>
 			</nav>
             
-            {/* <PdfLoader url={file} beforeLoad={<p>Loading...</p>} />
-            {(pdfDocument) => (
-              <PdfHighlighter
-                pdfDocument={pdfDocument} 
-            /> )} */}
 
 			<Document
 				file={`http://localhost:5000/get-file/${file.id}`}

@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-// import { useRouter } from "next/router";
+import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import { auth } from "../firebase";
 // import { doc, setDoc } from "firebase/firestore";
@@ -71,10 +71,10 @@ const handleSignup = async (e) => {
                         setPassword(e.target.value);
                         }}
                     />
-                <button required type="submit">Sign Up</button>
+                <button required type="submit"><Link to="/home" style={{"color":"white"}} className="nav-link">Sign Up</Link></button>
                 {err && <span>Something went wrong!</span>}
             </form>
-            <p>Already have an account? Login</p>
+            <p>Already have an account? <Link to="/" className="nav-link">Login</Link></p>
             </div>
         </div>
     );
