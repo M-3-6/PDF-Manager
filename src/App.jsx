@@ -6,7 +6,6 @@ import FileList from "./pages/ViewFiles";
 import Open from "./pages/OpenFile";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./styles.scss";
-import HighlightAndComment from "./components/HighlightAndComment";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
         <Route path="/register" element={< Register />} />
         <Route path="/home" element={< Home />} />
         <Route path="/files" element={<FileList />} />
-        <Route path="/open-file" Component={Open} />
+        <Route path="/open-file" element={<Open />}/>
       </Routes>
     </Router>
   );
