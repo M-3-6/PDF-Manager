@@ -11,8 +11,8 @@ import { Spinner } from "./Spinner";
 import { CommentSection } from "./CommentSection";
 
 const HighlightAndComment = ({pdfUrl}) => {
-  const pdfUrl = "some-file.pdf";
-  const [url, setUrl] = useState(pdfUrl);
+  const pdfFile = "some-file.pdf";
+  const [url, setUrl] = useState(pdfFile);
   const [highlights, setHighlights] = useState([]);
 
   useEffect(() => {
