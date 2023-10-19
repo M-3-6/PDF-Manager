@@ -5,8 +5,8 @@ import Login from "./pages/Login";
 import Open from "./pages/OpenFile";
 import Dashboard from "./pages/Dashboard";
 import Upload from "./components/UploadFile";
-import pdfFiles from "./pdfFiles";
 import Home from "./components/Home";
+import FileList from "./components/ViewFiles";
 
 // import { AuthContextProvider } from "../context/AuthContext";
 
@@ -15,10 +15,9 @@ function App() {
     <div>
       {/* <Register /> */}
       {/* <Login /> */}
-      {/* <Open file={"some-file-2.pdf"}/>  */}
-      <Home />
+      {/* <Home /> */}
       {/* <Open /> */}
-      {/* <HighlightAndComment /> */}
+      {/* <FileList /> */}
     </div>
   );
 }

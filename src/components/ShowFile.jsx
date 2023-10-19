@@ -22,6 +22,7 @@ const ShowFile = ({file, scale}) => {
 
 	return (
 		<div>
+			{console.log({file})}
 			<nav className="pdf-navigation">
 				<button onClick={goToPrevPage} disabled={pageNumber === 1}>Prev</button>
 				<button onClick={goToNextPage} disabled={pageNumber === numPages}>Next</button>
@@ -37,7 +38,7 @@ const ShowFile = ({file, scale}) => {
             /> )} */}
 
 			<Document
-				file={file}
+				file={`http://localhost:5000/get-file/${file.id}`}
 				onLoadSuccess={onDocumentLoadSuccess}
 			>
 				<Page pageNumber={pageNumber} scale={scale}/>
