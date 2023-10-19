@@ -1,5 +1,5 @@
 # PDF-Manager 
-The PDF Management & Collaboration System is a web application designed to simplify the
+PDF-Manager is a PDF Management & Collaboration System which is basically a web application designed to simplify the
 management and collaboration of PDF files. It provides users with the ability to securely upload,
 share, and collaborate on PDF documents. The system ensures easy access to shared files,
 facilitates commenting and discussions, and prioritizes data privacy and security. This PRD
@@ -38,6 +38,8 @@ Users should have the ability to share PDF files with authenticated users and th
 The PDF file should be available to shared users and all the users can concurrently access and edit the shared files.
 
 ## Technologies Used:
+The application is built using ReactJS on the front-end and Flask on the back-end. Various React Hooks like useState, useEffect, useContext, useReduce etc. were used for the development of the project. 
 
-Frontend - ReactJS
-Backend - Flask
+## Working Video
+The working of the application is demonstrated in the following video:
+https://www.loom.com/share/cdf8a33a1bdc4f83aa342286e9dc80a8
