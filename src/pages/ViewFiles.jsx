@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ShowFile from '../components/ShowFile';
 import { Link } from 'react-router-dom';
+import Logout from '../components/Logout';
+import HomeButton from '../components/HomeButton';
 
 function FileList() {
   const [files, setFiles] = useState([]);
@@ -17,6 +19,9 @@ function FileList() {
   }, []);
 
   return (
+    <div className='view-files-container'>
+      <Logout />
+      <HomeButton />
       <div className='pdf-grid'>
          {files.map(file => (
             <Link to="/open-file">
@@ -25,6 +30,7 @@ function FileList() {
                 </button>
                 </Link>
         ))}
+      </div>
     </div>
   );
 }

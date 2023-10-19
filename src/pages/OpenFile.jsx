@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import Logout from "../components/Logout";
 import Sidebar from "../components/Sidebar";
 import HighlightAndComment from "../components/HighlightAndComment";
+import HomeButton from "../components/HomeButton";
 // import { useParams } from "react-router-dom";
 // import axios from 'axios';
 
@@ -32,6 +33,7 @@ const Open = () => {
     return (
         <div>
             <Logout />
+            <HomeButton />
             <HighlightAndComment pdfUrl={fileData} /> 
             <Sidebar />  
         </div>
