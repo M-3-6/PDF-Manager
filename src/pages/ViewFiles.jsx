@@ -9,7 +9,7 @@ function FileList() {
   const [files, setFiles] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/get_all_files')
+    axios.get('https://pdf-manager-backend-production.up.railway.app/get_all_files')
       .then(response => {
         setFiles(response.data);
       })
